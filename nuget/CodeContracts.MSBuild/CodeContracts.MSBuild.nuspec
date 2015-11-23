@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>CodeContracts.MSBuild</id>
-        <version>1.7.11202.1001</version>
+        <version>1.7.11202.1002</version>
         <title>Microsoft Code Contracts standalone package for MSBuild</title>
-        <authors>Igor Oleinikov</authors>
+        <authors>Igor Oleinikov and Tim Long</authors>
         <projectUrl>https://github.com/Igorbek/CodeContracts.MSBuild</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Helper package to use with build servers. Contains all CodeContracts binaries and integrates into MSBuild build process.</description>
