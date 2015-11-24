@@ -1,21 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Tigra.CodeContracts.MSBuild</id>
-        <version>1.7.11202.1002</version>
+        <version>1.7.11202.1007</version>
         <title>Microsoft Code Contracts standalone package for MSBuild</title>
         <authors>Igor Oleinikov and Tim Long</authors>
         <projectUrl>https://github.com/NameOfTheDragon/CodeContracts.MSBuild</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
         <description>Helper package to use with build servers. Contains all CodeContracts binaries and integrates into MSBuild build process.</description>
-        <releaseNotes>
-        CodeContracts has been updated to v1.7.11202.10 (released on 12/3/2014).
-        Added support for MSBuild tools v14.0 (Visual Studio 2015). Released 23-Nov-2015.
-        </releaseNotes>
+        <releaseNotes>CodeContracts has been updated to v1.7.11202.10 (released on 12/3/2014).
+        Added support for MSBuild tools v14.0 (Visual Studio 2015). Released 23-Nov-2015.</releaseNotes>
         <tags>CodeContracts Code Contracts MSBuild</tags>
     </metadata>
     <files>
         <file src="build\CodeContracts.MSBuild.targets" target="build\CodeContracts.MSBuild.targets" />
-        <file src="..\..\Contracts\**" target="Contracts" />
+        <file src="content\net\DummyContent.txt" target="content\net\DummyContent.txt" />
+        <file src="..\..\Contracts\Bin\cccheck.exe" target="Contracts\Bin\cccheck.exe" />
+        <file src="..\..\Contracts\Bin\CCCheck.exe.config" target="Contracts\Bin\CCCheck.exe.config" />
+        <file src="..\..\Contracts\Bin\ccdocgen.exe" target="Contracts\Bin\ccdocgen.exe" />
+        <file src="..\..\Contracts\Bin\ccdocgen.exe.config" target="Contracts\Bin\ccdocgen.exe.config" />
+        <file src="..\..\Contracts\Bin\ccrefgen.exe" target="Contracts\Bin\ccrefgen.exe" />
+        <file src="..\..\Contracts\Bin\ccrefgen.exe.config" target="Contracts\Bin\ccrefgen.exe.config" />
+        <file src="..\..\Contracts\Bin\ccrewrite.exe" target="Contracts\Bin\ccrewrite.exe" />
+        <file src="..\..\Contracts\Bin\ccrewrite.exe.config" target="Contracts\Bin\ccrewrite.exe.config" />
+        <file src="..\..\Contracts\Bin\CodeContractsVSPropertyPane.dll" target="Contracts\Bin\CodeContractsVSPropertyPane.dll" />
+        <file src="..\..\Contracts\Bin\CodeToolsUpdate.exe" target="Contracts\Bin\CodeToolsUpdate.exe" />
+        <file src="..\..\Contracts\Bin\ITaskManager.dll" target="Contracts\Bin\ITaskManager.dll" />
+        <file src="..\..\Contracts\Bin\MsBuildCodeContracts.dll" target="Contracts\Bin\MsBuildCodeContracts.dll" />
+        <file src="..\..\Contracts\Bin\votive2010.dll" target="Contracts\Bin\votive2010.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\Microsoft.VisualBasic.Compatibility.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\Microsoft.VisualBasic.Compatibility.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\Microsoft.VisualBasic.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\Microsoft.VisualBasic.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\mscorlib.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\PresentationCore.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\PresentationCore.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\PresentationFramework.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\PresentationFramework.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.ComponentModel.Composition.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.ComponentModel.Composition.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Configuration.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Configuration.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Configuration.Install.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Configuration.Install.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Core.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Data.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Data.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Data.Services.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Data.Services.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.DirectoryServices.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.DirectoryServices.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Drawing.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Drawing.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Numerics.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Numerics.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Runtime.Caching.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Runtime.Caching.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Security.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Security.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.ServiceModel.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.ServiceModel.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.ServiceProcess.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.ServiceProcess.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Web.ApplicationServices.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Web.ApplicationServices.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Web.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Web.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Windows.Forms.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Windows.Forms.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Xml.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\System.Xml.Linq.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\System.Xml.Linq.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.0\WindowsBase.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.0\WindowsBase.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\Microsoft.VisualBasic.Compatibility.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\Microsoft.VisualBasic.Compatibility.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\Microsoft.VisualBasic.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\Microsoft.VisualBasic.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\mscorlib.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\PresentationCore.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\PresentationCore.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\PresentationFramework.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\PresentationFramework.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.ComponentModel.Composition.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.ComponentModel.Composition.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Configuration.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Configuration.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Configuration.Install.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Configuration.Install.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Core.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Data.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Data.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Data.Services.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Data.Services.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.DirectoryServices.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.DirectoryServices.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Drawing.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Drawing.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Numerics.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Numerics.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Runtime.Caching.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Runtime.Caching.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Security.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Security.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.ServiceModel.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.ServiceModel.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.ServiceProcess.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.ServiceProcess.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Web.ApplicationServices.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Web.ApplicationServices.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Web.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Web.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Windows.Forms.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Windows.Forms.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Xml.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\System.Xml.Linq.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\System.Xml.Linq.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\.NETFramework\v4.5\WindowsBase.Contracts.dll" target="Contracts\Contracts\.NETFramework\v4.5\WindowsBase.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\Microsoft.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\Microsoft.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\Microsoft.VisualBasic.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\Microsoft.VisualBasic.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\mscorlib.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\System.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\System.Core.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\System.Windows.Browser.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\System.Windows.Browser.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\System.Windows.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\System.Windows.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\System.Xml.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v3.0\System.Xml.Linq.Contracts.dll" target="Contracts\Contracts\Silverlight\v3.0\System.Xml.Linq.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\Microsoft.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\Microsoft.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\mscorlib.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Core.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Windows.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Windows.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Xml.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Xml.Linq.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Profile\WindowsPhone\System.Xml.Linq.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\Microsoft.VisualBasic.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\Microsoft.VisualBasic.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\mscorlib.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\System.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\System.Core.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\System.Windows.Browser.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\System.Windows.Browser.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\System.Windows.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\System.Windows.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\System.Xml.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v4.0\System.Xml.Linq.Contracts.dll" target="Contracts\Contracts\Silverlight\v4.0\System.Xml.Linq.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\Microsoft.VisualBasic.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\Microsoft.VisualBasic.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\mscorlib.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\System.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\System.Core.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\System.Windows.Browser.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\System.Windows.Browser.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\System.Windows.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\System.Windows.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\Silverlight\v5.0\System.Xml.Contracts.dll" target="Contracts\Contracts\Silverlight\v5.0\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\Microsoft.Contracts.dll" target="Contracts\Contracts\v3.5\Microsoft.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\Microsoft.VisualBasic.Compatibility.Contracts.dll" target="Contracts\Contracts\v3.5\Microsoft.VisualBasic.Compatibility.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\Microsoft.VisualBasic.Contracts.dll" target="Contracts\Contracts\v3.5\Microsoft.VisualBasic.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\mscorlib.Contracts.dll" target="Contracts\Contracts\v3.5\mscorlib.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Configuration.Contracts.dll" target="Contracts\Contracts\v3.5\System.Configuration.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Configuration.Install.Contracts.dll" target="Contracts\Contracts\v3.5\System.Configuration.Install.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Contracts.dll" target="Contracts\Contracts\v3.5\System.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Core.Contracts.dll" target="Contracts\Contracts\v3.5\System.Core.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Data.Contracts.dll" target="Contracts\Contracts\v3.5\System.Data.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.DirectoryServices.Contracts.dll" target="Contracts\Contracts\v3.5\System.DirectoryServices.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Drawing.Contracts.dll" target="Contracts\Contracts\v3.5\System.Drawing.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Security.Contracts.dll" target="Contracts\Contracts\v3.5\System.Security.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.ServiceProcess.Contracts.dll" target="Contracts\Contracts\v3.5\System.ServiceProcess.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Web.Contracts.dll" target="Contracts\Contracts\v3.5\System.Web.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Windows.Forms.Contracts.dll" target="Contracts\Contracts\v3.5\System.Windows.Forms.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Xml.Contracts.dll" target="Contracts\Contracts\v3.5\System.Xml.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\System.Xml.Linq.Contracts.dll" target="Contracts\Contracts\v3.5\System.Xml.Linq.Contracts.dll" />
+        <file src="..\..\Contracts\Contracts\v3.5\WindowsBase.Contracts.dll" target="Contracts\Contracts\v3.5\WindowsBase.Contracts.dll" />
+        <file src="..\..\Contracts\MsBuild\v12.0\Microsoft.CodeContractAnalysis.targets" target="Contracts\MsBuild\v12.0\Microsoft.CodeContractAnalysis.targets" />
+        <file src="..\..\Contracts\MsBuild\v12.0\Microsoft.CodeContracts.targets" target="Contracts\MsBuild\v12.0\Microsoft.CodeContracts.targets" />
+        <file src="..\..\Contracts\MsBuild\v14.0\Microsoft.CodeContractAnalysis.targets" target="Contracts\MsBuild\v14.0\Microsoft.CodeContractAnalysis.targets" />
+        <file src="..\..\Contracts\MsBuild\v14.0\Microsoft.CodeContracts.targets" target="Contracts\MsBuild\v14.0\Microsoft.CodeContracts.targets" />
+        <file src="..\..\Contracts\MsBuild\v3.5\Microsoft.CodeContractAnalysis.targets" target="Contracts\MsBuild\v3.5\Microsoft.CodeContractAnalysis.targets" />
+        <file src="..\..\Contracts\MsBuild\v3.5\Microsoft.CodeContracts.targets" target="Contracts\MsBuild\v3.5\Microsoft.CodeContracts.targets" />
+        <file src="..\..\Contracts\MsBuild\v4.0\Microsoft.CodeContractAnalysis.targets" target="Contracts\MsBuild\v4.0\Microsoft.CodeContractAnalysis.targets" />
+        <file src="..\..\Contracts\MsBuild\v4.0\Microsoft.CodeContracts.targets" target="Contracts\MsBuild\v4.0\Microsoft.CodeContracts.targets" />
+        <file src="..\..\Contracts\PublicAssemblies\Silverlight3\Microsoft.Contracts.dll" target="Contracts\PublicAssemblies\Silverlight3\Microsoft.Contracts.dll" />
+        <file src="..\..\Contracts\PublicAssemblies\Silverlight3\Redist.txt" target="Contracts\PublicAssemblies\Silverlight3\Redist.txt" />
+        <file src="..\..\Contracts\PublicAssemblies\v3.5\Microsoft.Contracts.dll" target="Contracts\PublicAssemblies\v3.5\Microsoft.Contracts.dll" />
+        <file src="..\..\Contracts\PublicAssemblies\v3.5\Redist.txt" target="Contracts\PublicAssemblies\v3.5\Redist.txt" />
+        <file src="..\..\Contracts\PublicAssemblies\WindowsPhone71\Microsoft.Contracts.dll" target="Contracts\PublicAssemblies\WindowsPhone71\Microsoft.Contracts.dll" />
+        <file src="..\..\Contracts\PublicAssemblies\WindowsPhone71\Redist.txt" target="Contracts\PublicAssemblies\WindowsPhone71\Redist.txt" />
     </files>
 </package>
